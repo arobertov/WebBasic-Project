@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
 html {
     font-family: Calibri,sans-serif;
     font-size: 14px;
     color:#fff;
 }
 header {
-    background: royalblue;
+    background: url("images/background.png") no-repeat left;
+    background-size: cover;
     position: relative;
+    height: 300px;
 }
 div#logo {
     padding: 20px 40px;
@@ -19,6 +22,11 @@ div#search {
     top:20px;
     right: 20px;
     background: #ffffff;
+}
+div#search:after {
+    clear: both;
+    content: "";
+    display: table;
 }
 #search input[type=text] {
     width: 80%;
@@ -37,9 +45,18 @@ div#search {
 .fa-input {
     font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    padding:1rem 2rem;
+}
+/* ---------- top menu -----------------------------   */
 nav {
-    display: inline-block;
+    background: rgba(81, 102, 124, 0.3);
     text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 ul#topmenu li {
     display: inline-block;
@@ -57,3 +74,4 @@ ul#topmenu li a,a:visited,a:focus {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
+/*------------------------------ end topmenu --------------- */
