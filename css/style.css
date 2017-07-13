@@ -5,7 +5,7 @@ html body,h1,h2,h3,h4,h5,h6,p,ul,li,a {
 }
 
 header {
-    background: url("images/background.png") no-repeat left;
+    background: url("../images/background.png") no-repeat left;
     background-size: cover;
     position: relative;
     height: 300px;
