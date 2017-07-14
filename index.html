@@ -40,14 +40,86 @@
     </header>
     <!--------------------- end header ------------------->
     <main>
+
+        <!-- ------------ Modal Register Form --------------- -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Place register here</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="new-account">
+                            <h3>New Account:</h3>
+                            <div class="check">
+                                <input type="text" name="name" placeholder="Username">
+                            </div>
+                            <div class="check">
+                                <input type="email" name="email" placeholder="E-Mail">
+                            </div>
+                            <div class="cross">
+                                <input type="password" name="name" placeholder="Password">
+                            </div>
+                            <div class="cross">
+                                <input type="password" name="name" placeholder="Repeat Password">
+                            </div>
+                            <input type="submit" value="Create Account">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ------------End  Modal Register Form --------------- -->
+
         <section>
             <div class="row">
-                <div class="col-lg-8">
-                    <p>Content</p>
+                <div class=" col-md-4 ">
+                    <article>
+                        <h2>Welcome</h2>
+                        <p>
+                            Welcome the most popular software university in the world.
+                        </p>
+                        <p>
+                            If you want to become the best programmer follow three easy steps:
+                        </p>
+                            <ul>
+                                <li>
+                                    Join us:
+                                    <span>
+                                        <button type="button"  data-toggle="modal" data-target="#myModal">Sign In</button>
+                                    </span>
+                                </li>
+                                <li>
+                                    Get ready for a healthy learning !!!
+                                </li>
+                                <li>
+                                    Prepare more money and gifts for the lecturers.<strong>Wow !</strong>
+                                </li>
+                            </ul>
+                    </article>
                 </div>
-                <div class="col-lg-4">
-                    <p>Content</p>
+                <div class="col-md-4">
+                    <article>
+                        <h2>Be positive</h2>
+                        <p>We guarantee that you will be well prepared and with a lot of knowledge</p>
+                        <img src="images/be-positive.jpg" alt="be-positive">
+                    </article>
                 </div>
+                <div class="col-md-4">
+                    <article>
+                        <h2>We know how</h2>
+                        <p>With our team of professional lecturers, you will be full of knowledge and complete cuckoo !</p>
+                        <img src="images/cuckoou.gif">
+                    </article>
+                </div>
+                
             </div>
         </section>
     </main>

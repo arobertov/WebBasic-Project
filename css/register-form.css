@@ -1,0 +1,53 @@
+/* ------------------ styling modal form ---------------------------*/
+.modal-content {
+    background: #48536f;
+    border-radius: 0;
+}
+form {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    vertical-align: top;
+}
+form input {
+    width: 87%;
+    padding: 7px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+.check,
+.cross{
+    position: relative;
+}
+.check:after,
+.cross:after
+{
+    font-family: 'FontAwesome',sans-serif;
+    position: absolute;
+    bottom: 12px;
+    right: 47px;
+    color:#fff;
+    padding: 2px;
+    font-size: 1.1rem;
+}
+.check:after {
+    background: #81f900;
+    content: '\f00c';
+}
+.cross:after {
+    background: #C60C0F;
+    content: '\f00d';
+}
+.new-account input[type=checkbox] {
+    width: 5%;
+}
+form input[type=submit] {
+    border: 2px solid #888;
+    background: none;
+    width: 45%;
+}
+form input[type=submit]:hover {
+    cursor: pointer;
+    background: #af23f9;
+    border-color: #af23f9;
+}
