@@ -1,0 +1,87 @@
+@media screen and (max-width: 992px) {
+    /* ---------------- footer ------------- */
+    #social {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    ul.social ,
+    div.copyright {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    /*------------ heading -------------- */
+    div#logo {
+        padding: 1rem 0.2rem;
+        transform: scale(0.7);
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    div#search {
+        width: 100px;
+        top:20px;
+        right: 20px;
+    }
+    #search input[type=text]  {
+        width: 70px;
+    }
+
+    /* -------------- nav-menu ------------- */
+    nav[role="custom-dropdown"] ul {
+        display: none;
+        height: 100%;
+    }
+    nav[role="custom-dropdown"] label {
+        position: relative;
+        display: block;
+        width: 100%;
+        min-height: 2.25em;
+        padding: .45em;
+        font-size: 1.1em;
+        margin: 0;
+        border: 0.15em solid rgba(60, 60, 60, 0.2);
+    }
+    nav[role="custom-dropdown"] label:after {
+        position: absolute;
+        right: .25em;
+        top: 0;
+        content: "\2261";
+        font-size: 1.8em;
+    }
+    nav[role="custom-dropdown"] input[type=checkbox]:checked ~ label:after {
+        color: #222;
+    }
+    nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul {
+        display: block;
+    }
+    nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li {
+        width: 100%;
+        opacity: .8;
+        text-align: left;
+    }
+    nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:after {
+        position: absolute;
+        right: .25em;
+        content: "\203A";
+        font: bold 1.4em sans-serif;
+    }
+    /* -------------------- footer ------------------------------------ */
+    footer > div.content {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 460px) {
+    footer > div.content {
+        width: 80%;
+        display: block;
+       margin: 0 auto;
+    }
+    footer > div.content li {
+
+    }
+
+}

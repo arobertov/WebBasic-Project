@@ -1,3 +1,5 @@
+@import "fonts.css";
+@import "reset.css";
 @import "register-form.css";
 html body {
     font-family: "Lato",Calibri,sans-serif;
@@ -9,7 +11,6 @@ header {
     background: url("../images/background.png") no-repeat left;
     background-size: cover;
     position: relative;
-    height: 300px;
 }
 div#logo {
     padding: 20px 40px;
@@ -50,39 +51,63 @@ div#search:after {
 }
 header h1 {
     font-family: 'Anton', sans-serif;
-    font-size: 2.5rem;
-    padding:1.5rem 2rem;
+    font-size: 2.3rem;
+    padding: 2rem 1.5rem;
     animation-name: bounceInRight;
     animation-duration: 3s;
     animation-timing-function:ease-out;
 }
 /* ---------- top menu -----------------------------   */
-nav {
-    background: rgba(81, 102, 124, 0.3);
-    text-align: right;
+input[type=checkbox] {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: -9999px;
+    left: -9999px;
 }
-ul#topmenu li {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ccc;
-    font-weight: 900;
-    transition: transform 0.5s;
-}
-ul#topmenu li:hover {
-    color: #fff;
-    background: #463e4d;
-    cursor: pointer;
-    transform: translateY(-5px);
 
+label {
+    display: none;
+    cursor: pointer;
+    user-select: none;
 }
-ul#topmenu li a,a:visited,a:focus {
-    color: inherit;
+
+/* background for li / select */
+/* custom-dropdown */
+nav[role="custom-dropdown"] {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+}
+nav[role="custom-dropdown"] a,
+nav[role="custom-dropdown"] label {
+    color: #ccc;
     text-decoration: none;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
+    font-size: 1em;
+    transition: color .3s ease-in-out;
+}
+nav[role="custom-dropdown"] ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+}
+nav[role="custom-dropdown"] ul > li {
+    float: left;
+    padding: .55em .15em;
+    width: 15%;
+    text-align: center;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: box-shadow, color;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+nav[role="custom-dropdown"] ul > li:hover {
+    background-color: rgba(72, 83, 111, 0.85);
+    color: #fff;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35), inset 0 0 0 2em rgba(0, 0, 0, 0.3);
+}
+nav[role="custom-dropdown"] ul > li:hover > a {
+    color: #fff;
 }
 /*------------------------------ end topmenu --------------- */
 
@@ -101,6 +126,7 @@ main > section {
 section article {
     padding: 0.7rem;
     text-align: justify;
+    min-height: 100%
 }
 article h2 {
     font-size: 2rem;
@@ -108,13 +134,15 @@ article h2 {
     font-weight: 900;
 }
 article p {
-     line-height: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
     padding-bottom: 1rem;
 }
 article ul {
     list-style-type: decimal;
 }
 article li {
+    font-size: 1.1rem;
     padding-bottom: 1.2rem;
 }
 article button {
@@ -123,18 +151,18 @@ article button {
     padding: 0.3rem 1rem;
 }
 article button:hover {
-    background: peru;
+    background: #af23f9;
 }
 
 /*------------------------------ footer  --------------- */
 footer {
-    background: #0b083b;
+    background: #070c30;
     text-align: center;
 }
-footer>div.content {
+footer > div.content {
     font-family: "Lato", Calibri, sans-serif;
     display: inline-block;
-    width: 18%;
+    width: 19%;
     padding: 1rem 0;
     text-align: left;
     vertical-align: top;

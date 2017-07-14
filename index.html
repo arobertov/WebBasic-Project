@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <title>SoftUni Funny Page</title>
 </head>
 <body>
@@ -26,17 +26,19 @@
                 <input type="submit" class="btn fa-input" value="&#xf002;">
             </form>
         </div>
-        <h1>Welcome to the best programmer's university</h1>
-        <nav>
-            <ul id="topmenu">
+        <nav role="custom-dropdown" >
+            <input type="checkbox" id="button">
+            <label for="button" onclick></label>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Stores</a></li>
                 <li><a href="#">Online Shop</a></li>
                 <li><a href="#">Forum</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <h1>Welcome to the best programmer's university</h1>
     </header>
     <!--------------------- end header ------------------->
     <main>
@@ -54,19 +56,36 @@
                     <div class="modal-body">
                         <form class="new-account">
                             <h3>New Account:</h3>
-                            <div class="check">
-                                <input type="text" name="name" placeholder="Username">
+                            <div class="row">
+                                <div class="col-sm-6 basic-field">
+                                    <input type="text" name="name" placeholder="Username">
+
+                                    <input type="email" name="email" placeholder="E-Mail">
+
+                                    <input type="password" name="name" placeholder="Password">
+
+                                    <input type="password" name="name" placeholder="Repeat Password">
+
+                                </div>
+                                <div class="col-sm-6 additional-options">
+                                    <label class="gender-select">Choose gender</label>
+                                    <select name="gender" id="gender">
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                        <option value="3">Don't now</option>
+                                    </select>
+                                    <label>Payment method</label>
+                                    <select multiple name="pay-method" id="pay-method">
+                                        <option value="1">Cash</option>
+                                        <option value="2">Bottle Rakia</option>
+                                        <option value="3">5Lt Red Wine</option>
+                                        <option value="4">Roast chicken</option>
+                                    </select>
+                                </div>
+                                <div class="submit">
+                                    <input type="submit" value="Create Account">
+                                </div>
                             </div>
-                            <div class="check">
-                                <input type="email" name="email" placeholder="E-Mail">
-                            </div>
-                            <div class="cross">
-                                <input type="password" name="name" placeholder="Password">
-                            </div>
-                            <div class="cross">
-                                <input type="password" name="name" placeholder="Repeat Password">
-                            </div>
-                            <input type="submit" value="Create Account">
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -80,7 +99,7 @@
 
         <section>
             <div class="row">
-                <div class=" col-md-4 ">
+                <div class=" col-md-4 col-sm-6">
                     <article>
                         <h2>Welcome</h2>
                         <p>
@@ -105,14 +124,14 @@
                             </ul>
                     </article>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <article>
                         <h2>Be positive</h2>
                         <p>We guarantee that you will be well prepared and with a lot of knowledge</p>
                         <img src="images/be-positive.jpg" alt="be-positive">
                     </article>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <article>
                         <h2>We know how</h2>
                         <p>With our team of professional lecturers, you will be full of knowledge and complete cuckoo !</p>
@@ -144,9 +163,9 @@
         <div class="content">
             <h3>MAIN PARTNERS</h3>
             <ul>
-                <li><a href="#">Apple</a></li>
-                <li><a href="#">Microsoft</a></li>
-                <li><a href="#">Adobe</a></li>
+                <li><a href="#">IDIL</a></li>
+                <li><a href="#">Al Qaeda</a></li>
+                <li><a href="#">KozaNostra</a></li>
             </ul>
         </div>
         <div class="content">
@@ -158,7 +177,7 @@
             </ul>
         </div>
 
-        <div class="content">
+        <div class="content" id="social">
             <ul class="social">
                 <li>
                     <a href="https://www.facebook.com/SoftwareUniversity" target="_blank" class="icon-btn">
