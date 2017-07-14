@@ -4,11 +4,12 @@
 html body {
     font-family: "Lato",Calibri,sans-serif;
     font-size: 14px;
+    background: #76d0cc;
     color:#fff;
 }
 
 header {
-    background: url("../images/background.png") no-repeat left;
+    background: url("../images/background.png") no-repeat center;
     background-size: cover;
     position: relative;
 }
@@ -117,7 +118,7 @@ main {
     padding: 0.8rem;
 }
 main > section {
-    background: #5cd0c9;
+    background: rgba(118, 208, 204, 0.29);
     width: 80%;
     display: block;
     margin: 0 auto;
