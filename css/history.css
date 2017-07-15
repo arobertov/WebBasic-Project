@@ -1,0 +1,42 @@
+section#history {
+    overflow: hidden;
+    text-align: justify;
+}
+#history h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    padding: 1.5rem;
+}
+#history p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+ img#hogwarts {
+    float: right;
+     width: 50%;
+     padding: 0.5rem 1rem;
+}
+ img#night,
+ img#funny {
+     float: left;
+     width: 50%;
+     padding: 0.5rem 1rem;
+ }
+
+@media screen and (min-width: 1024px) {
+    #history h2 {
+        font-size: 3rem;
+
+    }
+    #history p {
+        font-size: 2.2rem;
+        line-height: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+  #history  img {
+        float: none;
+        width: 100%;
+    }
+
+}
