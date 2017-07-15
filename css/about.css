@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Limelight');
 section#trainers h2,
-section#base h2  {
+section#base h2,
+section#equipment h2 {
     padding: 1rem;
     font-size: 2.3rem;
     font-weight: 900;
@@ -46,19 +47,27 @@ section#base h2  {
     vertical-align: bottom;
 }
 section#trainers h3,
-section#base h3 {
+section#base h3,
+section#equipment h3 {
     font-family: Limelight,cursive;
     padding: 1rem 0;
     font-size: 1.2rem;
 }
-section#trainers p {
+section#trainers p,
+section#equipment p {
     font-family: Raleway,sans-serif;
     line-height: 1.5rem;
     font-size: 1.1rem;
 }
-#all-trainers {
+#all-trainers,
+#equipment {
     padding: 1.5rem;
 }
-#all-trainers img{
+#all-trainers img,
+#equipment img {
+    width: 100%;
     box-shadow: 8px 8px 15px #716961;
+}
+#equipment div.row {
+    padding: 1rem;
 }
