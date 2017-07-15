@@ -1,0 +1,52 @@
+section#trainers h2,
+section#base  {
+    padding: 1rem;
+    font-size: 2.3rem;
+    font-weight: 900;
+    border-bottom: 3px solid #fff;
+}
+.training {
+    padding: 1rem;
+}
+.img-container {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.hover {
+    position: absolute;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 188, 212, 0);
+}
+.hover:hover {
+    cursor: pointer;
+    background-color: rgba(5, 8, 33, 0.56);
+    animation-play-state: running;
+}
+.hover:hover p{
+    display: block;
+}
+.hover p {
+    position: relative;
+    top: 44%;
+    transform: translateX(13%);
+    font-size: 1.2rem;
+    display: none;
+
+}
+.img-container img {
+    width: 100%;
+    vertical-align: bottom;
+}
+section#trainers h3,
+section#base {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
